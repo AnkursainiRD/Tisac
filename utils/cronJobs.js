@@ -1,5 +1,5 @@
 import cron from 'node-cron'
-import { updateRefreshToken } from './tokensWorker'
+import { updateRefreshToken } from './tokensWorker.js'
 
 cron.schedule("*/15 * * * * *", async () => {
     try {

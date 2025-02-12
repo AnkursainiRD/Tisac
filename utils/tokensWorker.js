@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken'
 
 const updateRefreshToken=async()=>{
    try {
+    console.log("first")
      const users=await User.find({});
      
      for(let user of users){
